@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		4203CFA529D8A5DB005B4587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4203CFA429D8A5DB005B4587 /* AppDelegate.swift */; };
 		4203CFA729D8A5DB005B4587 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4203CFA629D8A5DB005B4587 /* SceneDelegate.swift */; };
-		4203CFA929D8A5DB005B4587 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4203CFA829D8A5DB005B4587 /* ViewController.swift */; };
 		4203CFAC29D8A5DB005B4587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4203CFAA29D8A5DB005B4587 /* Main.storyboard */; };
-		4203CFAE29D8A5DE005B4587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4203CFAD29D8A5DE005B4587 /* Assets.xcassets */; };
 		4203CFB129D8A5DE005B4587 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4203CFAF29D8A5DE005B4587 /* LaunchScreen.storyboard */; };
+		4203CFC129D9CEC7005B4587 /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4203CFC029D9CEC7005B4587 /* ViewCodeProtocol.swift */; };
+		4203CFC529DA0BB8005B4587 /* EggTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4203CFC429DA0BB8005B4587 /* EggTimerViewController.swift */; };
+		4203CFE829DA21C1005B4587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4203CFE729DA21C1005B4587 /* Assets.xcassets */; };
+		4203CFEA29DA4B5F005B4587 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4203CFE929DA4B5F005B4587 /* alarm_sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4203CFA129D8A5DB005B4587 /* EggTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4203CFA429D8A5DB005B4587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4203CFA629D8A5DB005B4587 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4203CFA829D8A5DB005B4587 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4203CFAB29D8A5DB005B4587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4203CFAD29D8A5DE005B4587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4203CFB029D8A5DE005B4587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4203CFB229D8A5DE005B4587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4203CFC029D9CEC7005B4587 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
+		4203CFC429DA0BB8005B4587 /* EggTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimerViewController.swift; sourceTree = "<group>"; };
+		4203CFE729DA21C1005B4587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4203CFE929DA4B5F005B4587 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarm_sound.mp3; path = "../../Bootcamp iOS/EggTimer-iOS13/EggTimer/alarm_sound.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		4203CFA329D8A5DB005B4587 /* EggTimer */ = {
 			isa = PBXGroup;
 			children = (
+				4203CFBC29D9C6A0005B4587 /* View */,
 				4203CFA429D8A5DB005B4587 /* AppDelegate.swift */,
 				4203CFA629D8A5DB005B4587 /* SceneDelegate.swift */,
-				4203CFA829D8A5DB005B4587 /* ViewController.swift */,
 				4203CFAA29D8A5DB005B4587 /* Main.storyboard */,
-				4203CFAD29D8A5DE005B4587 /* Assets.xcassets */,
 				4203CFAF29D8A5DE005B4587 /* LaunchScreen.storyboard */,
 				4203CFB229D8A5DE005B4587 /* Info.plist */,
+				4203CFE729DA21C1005B4587 /* Assets.xcassets */,
+				4203CFE929DA4B5F005B4587 /* alarm_sound.mp3 */,
 			);
 			path = EggTimer;
+			sourceTree = "<group>";
+		};
+		4203CFBC29D9C6A0005B4587 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4203CFC029D9CEC7005B4587 /* ViewCodeProtocol.swift */,
+				4203CFC429DA0BB8005B4587 /* EggTimerViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +140,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4203CFB129D8A5DE005B4587 /* LaunchScreen.storyboard in Resources */,
-				4203CFAE29D8A5DE005B4587 /* Assets.xcassets in Resources */,
+				4203CFE829DA21C1005B4587 /* Assets.xcassets in Resources */,
+				4203CFEA29DA4B5F005B4587 /* alarm_sound.mp3 in Resources */,
 				4203CFAC29D8A5DB005B4587 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4203CFA929D8A5DB005B4587 /* ViewController.swift in Sources */,
+				4203CFC129D9CEC7005B4587 /* ViewCodeProtocol.swift in Sources */,
+				4203CFC529DA0BB8005B4587 /* EggTimerViewController.swift in Sources */,
 				4203CFA529D8A5DB005B4587 /* AppDelegate.swift in Sources */,
 				4203CFA729D8A5DB005B4587 /* SceneDelegate.swift in Sources */,
 			);
